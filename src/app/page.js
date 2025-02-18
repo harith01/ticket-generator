@@ -1,5 +1,6 @@
 import CustomSelect from "./components/CustomSelect";
 import Tickets from "./components/Tickets";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,8 +32,8 @@ export default function Home() {
       </div>
       <CustomSelect />
       <div className="flex justify-between gap-6">
-        <button className="py-3 px-6 border border-[#24A0B5] basis-1/2 rounded-xl ">Cancel</button>
-        <button className="py-3 px-6 border border-[#24A0B5] basis-1/2 bg-[#24A0B5] rounded-xl" >Next</button>
+        <Link href="#" className="py-3 px-6 border border-[#24A0B5] basis-1/2 rounded-xl text-center ">Cancel</Link>
+        <Link href="#" className="py-3 px-6 border border-[#24A0B5] basis-1/2 bg-[#24A0B5] rounded-xl text-center" >Next</Link>
       </div>
     </section>
   );
