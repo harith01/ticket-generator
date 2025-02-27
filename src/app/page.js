@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className="bg-[#041E23] max-w-[700px] rounded-[40px] border-[1px] border-[#0E464F] mx-auto mt-8 p-[24px] sm:p-[48px] flex flex-col gap-8">
       <div className="flex justify-between items-center gap-3 max-w-[604px]">
-        <h1 className="max-w-[531px] text-[1rem] sm:text-[2rem] md:text-[3rem] font-normal">Ticket Selection</h1>
+        <h1 className="max-w-[531px] text-[1rem] sm:text-[1.5rem] md:text-[2rem] font-normal">Ticket Selection</h1>
         <div className="text-[16px] font-normal font-roboto">Step 1/3</div>
       </div>
       <div className="w-full h-[4px] bg-[#0E464F] rounded-[5px]">
@@ -31,9 +31,9 @@ export default function Home() {
         <Tickets />
       </div>
       <CustomSelect />
-      <div className="flex justify-between gap-6">
+      <div className="flex justify-between gap-6 flex-col sm:flex-row">
         <Link href="#" className="py-3 px-6 border border-[#24A0B5] basis-1/2 rounded-xl text-center ">Cancel</Link>
-        <Link href="#" className="py-3 px-6 border border-[#24A0B5] basis-1/2 bg-[#24A0B5] rounded-xl text-center" >Next</Link>
+        <Link href="/attendee-details" className="py-3 px-6 border border-[#24A0B5] basis-1/2 bg-[#24A0B5] rounded-xl text-center" >Next</Link>
       </div>
     </section>
   );
